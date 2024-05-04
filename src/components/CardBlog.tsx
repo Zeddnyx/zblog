@@ -1,21 +1,28 @@
 import Link from "next/link";
-import { BiComment } from "react-icons/bi";
+import { FaRegCommentAlt } from "react-icons/fa";
 
+import Tag from "./Tag";
 import { IBlog } from "@/types";
+
 import countMinutes from "@/utils/count-minutes";
 
 export default function CardBlog({ ...props }: IBlog) {
-  const { content, title, slug, comments } = props;
+  const { content, title, slug, comments, category } = props;
+  const categoryArr = category.split(" ");
+
   return (
-    <Link href={`/${slug}`} className="card-blog">
-      <h3 className="line-clamp-3 text-2xl">{title}</h3>
-      <p className="line-clamp-3">{content}</p>
-      <div className="flex items-center gap-5 [&>*]:text-sm [&>*]:flex [&>*]:gap-1 [&>*]:items-center">
-        <p>{countMinutes(content)} min read</p>
+    <div className="card-blog">
+      <Link href={`/${slug}`} className="">
+        <h3 className="line-clamp-3 text-2xl hover:text-brand">{title}</h3>
+      </Link>
+      <Tag category={categoryArr} />
+      <div className="mt-2 flex justify-between items-center gap-5 [&>*]:text-sm [&>*]:flex [&>*]:gap-1 [&>*]:items-center *:font-support">
         <p>
-          {comments} <BiComment />{" "}
+          <FaRegCommentAlt />{" "}
+          {comments == 0 ? "Add Comment" : `${comments} comments`}
         </p>
+        <p className="text-[12px]">{countMinutes(content)} min read</p>
       </div>
-    </Link>
+    </div>
   );
 }

@@ -12,7 +12,6 @@ export default function Home() {
         category={dummyBlogs[0].category}
       />
       <div className="max-w-all mt-10">
-        <h2 className="font-semibold xl:text-4xl">Latest</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
           {dummyBlogs.map((item, id) => {
             return <CardBlog key={id} {...item} />;
@@ -29,7 +28,7 @@ const dummyBlogs: IBlog[] = [
     content:
       "Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit",
     slug: "most-popular-blog",
-    category: "Most Popular",
+    category: "React Nextjs",
     comments: 10,
   },
   {
@@ -37,7 +36,7 @@ const dummyBlogs: IBlog[] = [
     content:
       "Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit",
     slug: "most-popular-blog",
-    category: "Most Popular",
+    category: "React Nextjs",
     comments: 10,
   },
   {
@@ -45,7 +44,7 @@ const dummyBlogs: IBlog[] = [
     content:
       "Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit",
     slug: "most-popular-blog",
-    category: "Most Popular",
+    category: "React Nextjs",
     comments: 10,
   },
   {
@@ -53,7 +52,7 @@ const dummyBlogs: IBlog[] = [
     content:
       "Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit",
     slug: "most-popular-blog",
-    category: "Most Popular",
+    category: "React Nextjs",
     comments: 10,
   },
   {
@@ -61,7 +60,7 @@ const dummyBlogs: IBlog[] = [
     content:
       "Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit",
     slug: "most-popular-blog",
-    category: "Most Popular",
+    category: "React Nextjs",
     comments: 10,
   },
   {
@@ -69,7 +68,7 @@ const dummyBlogs: IBlog[] = [
     content:
       "Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit",
     slug: "most-popular-blog",
-    category: "Most Popular",
+    category: "React Nextjs",
     comments: 10,
   },
   {
@@ -77,7 +76,7 @@ const dummyBlogs: IBlog[] = [
     content:
       "Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit",
     slug: "most-popular-blog",
-    category: "Most Popular",
+    category: "React Nextjs",
     comments: 10,
   },
   {
@@ -85,7 +84,7 @@ const dummyBlogs: IBlog[] = [
     content:
       "Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit",
     slug: "most-popular-blog",
-    category: "Most Popular",
+    category: "React Nextjs",
     comments: 10,
   },
   {
@@ -93,7 +92,7 @@ const dummyBlogs: IBlog[] = [
     content:
       "Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit",
     slug: "most-popular-blog",
-    category: "Most Popular",
+    category: "React Nextjs",
     comments: 10,
   },
 ];

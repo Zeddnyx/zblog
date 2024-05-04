@@ -1,12 +1,10 @@
-import { Inter,Radio_Canada } from 'next/font/google'
+import { Inter, Noto_Sans } from "next/font/google";
 
-const inter = Inter({ subsets: ['latin'],variable: "--font-inter" })
-const canada = Radio_Canada({ subsets: ['latin'],variable: "--font-canada" })
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const noto = Noto_Sans({ subsets: ["latin"], variable: "--font-noto" });
 
- export default function Index({children}: {children: React.ReactNode}) {
+export default function Index({ children }: { children: React.ReactNode }) {
   return (
-    <div className={`${inter.className} ${canada.className} `}>
-      {children}
-    </div>
-  )
+    <div className={`${inter.variable} ${noto.variable} `}>{children}</div>
+  );
 }

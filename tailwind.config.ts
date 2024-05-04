@@ -14,11 +14,10 @@ const config: Config = {
       },
       fontFamily: {
         body: ["var(--font-inter)", "sans-serif"],
-        support: ["var(--font-canada)", "sans-serif"],
+        support: ["var(--font-noto)", "sans-serif"],
       },
       colors: {
-        brand: "#f3f3f3",
-        brand_dark: "#f3f3f3",
+        brand: "#7AE582",
         light: {
           DEFAULT: "#ffffff",
           base: "#646464",
